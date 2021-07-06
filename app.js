@@ -38,12 +38,12 @@ const app= ()=>{
         if(song.paused){
             song.play();
             video.play();
-            play.src='./pause.svg';
+            play.src='./svg/pause.svg';
         }
         else{
             song.pause();
             video.pause();
-            play.src='./play.svg';
+            play.src='./svg/play.svg';
         }
     }
     song.ontimeupdate=()=>{
@@ -59,7 +59,7 @@ const app= ()=>{
         if(currentTime>= falseDuration){
             song.pause();
             song.currentTime=0;
-            play.src='./play.svg';
+            play.src='./svg/play.svg';
             video.pause();
         }
     }
